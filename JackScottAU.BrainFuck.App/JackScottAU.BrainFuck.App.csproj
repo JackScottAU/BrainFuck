@@ -7,8 +7,8 @@
     <ProjectGuid>{B7AA8670-AE53-41C1-A5E3-BAD510C693C8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JackScottAU.BrainFuck.Interpreter</RootNamespace>
-    <AssemblyName>JackScottAU.BrainFuck.Interpreter</AssemblyName>
+    <RootNamespace>JackScottAU.BrainFuck.App</RootNamespace>
+    <AssemblyName>JackScottAU.BrainFuck.App</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,6 +30,9 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>JackScottAU.BrainFuck.App.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
