@@ -6,7 +6,7 @@
 	/// <remarks>
 	/// The equivalent to C's *ptr++;
 	/// </remarks>
-	class Increment : IInstruction
+	public class Increment : IInstruction
 	{
 	}
 }

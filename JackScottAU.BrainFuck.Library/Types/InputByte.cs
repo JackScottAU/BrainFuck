@@ -3,7 +3,7 @@
 	/// <summary>
 	/// Represents an operation which reads from standard input a single byte and puts it in the current cell.
 	/// </summary>
-	class InputByte : IInstruction
+	public class InputByte : IInstruction
 	{
 	}
 }

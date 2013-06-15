@@ -3,7 +3,7 @@
 	/// <summary>
 	/// Represents an operation which outputs the value of the current cell to standard output.
 	/// </summary>
-	class OutputByte : IInstruction
+	public class OutputByte : IInstruction
 	{
 	}
 }

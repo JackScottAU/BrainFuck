@@ -3,7 +3,7 @@
 	/// <summary>
 	/// Represents an operation which moves to the previous cell in the memory.
 	/// </summary>
-	class PreviousCell : IInstruction
+	public class PreviousCell : IInstruction
 	{
 	}
 }
