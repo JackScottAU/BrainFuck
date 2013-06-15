@@ -68,13 +68,16 @@ namespace JackScottAU.BrainFuck.Library
 					_memory[_currentCell] = Convert.ToByte(_inputStream.Read());
 
 				if (instruction is OutputByte)
-					_outputStream.Write(_memory[_currentCell]);
+					_outputStream.Write((char)_memory[_currentCell]);
 
 				if (instruction is Loop)
 				{
-					Loop temp = (Loop)instruction;
+					while(_memory[_currentCell] != 0)
+					{
+						Loop temp = (Loop)instruction;
 
-					Interpret(temp.Statements);
+						Interpret(temp.Statements);
+					}
 				}
 			}
 		}
