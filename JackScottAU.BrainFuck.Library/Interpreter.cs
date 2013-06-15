@@ -13,6 +13,11 @@ namespace JackScottAU.BrainFuck.Library
 		private Byte[] _memory;
 
 		/// <summary>
+		/// The index to the current cell in memory.
+		/// </summary>
+		private int _currentCell;
+
+		/// <summary>
 		/// Where to get our input.
 		/// </summary>
 		private TextReader _inputStream;
@@ -35,6 +40,8 @@ namespace JackScottAU.BrainFuck.Library
 			_inputStream = inputStream;
 
 			_outputStream = outputStream;
+
+			_currentCell = 0;
 		}
 
 		/// <summary>
@@ -43,7 +50,33 @@ namespace JackScottAU.BrainFuck.Library
 		/// <param name="syntaxTree">The AST representation of the code.</param>
 		public void Interpret(List<IInstruction> syntaxTree)
 		{
-			throw new NotImplementedException();
+			foreach (IInstruction instruction in syntaxTree)
+			{
+				if (instruction is Decrement)
+					_memory[_currentCell]--;
+
+				if (instruction is Increment)
+					_memory[_currentCell]++;
+
+				if (instruction is PreviousCell)
+					_currentCell--;
+
+				if (instruction is NextCell)
+					_currentCell++;
+
+				if (instruction is InputByte)
+					_memory[_currentCell] = Convert.ToByte(_inputStream.Read());
+
+				if (instruction is OutputByte)
+					_outputStream.Write(_memory[_currentCell]);
+
+				if (instruction is Loop)
+				{
+					Loop temp = (Loop)instruction;
+
+					Interpret(temp.Statements);
+				}
+			}
 		}
 	}
 }
