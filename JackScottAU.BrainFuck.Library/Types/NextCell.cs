@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace JackScottAU.BrainFuck.Library.Types
+﻿namespace JackScottAU.BrainFuck.Library.Types
 {
+	/// <summary>
+	/// Represents an operation that moves to the next cell in the memory.
+	/// </summary>
 	class NextCell : IInstruction
 	{
 	}

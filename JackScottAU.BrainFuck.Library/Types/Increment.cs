@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace JackScottAU.BrainFuck.Library.Types
+﻿namespace JackScottAU.BrainFuck.Library.Types
 {
+	/// <summary>
+	/// Represents an increment instruction.
+	/// </summary>
+	/// <remarks>
+	/// The equivalent to C's *ptr++;
+	/// </remarks>
 	class Increment : IInstruction
 	{
 	}

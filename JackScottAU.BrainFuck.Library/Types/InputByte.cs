@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace JackScottAU.BrainFuck.Library.Types
+﻿namespace JackScottAU.BrainFuck.Library.Types
 {
+	/// <summary>
+	/// Represents an operation which reads from standard input a single byte and puts it in the current cell.
+	/// </summary>
 	class InputByte : IInstruction
 	{
 	}
