@@ -11,9 +11,9 @@ BrainFuck code, using the .NET infrastructure.
 
 *  Parser for BrainFuck code to turn it into an abstract syntax tree.
 
-## Future Features
-
 *  Interpreter allowing BrainFuck code to be executed.
+
+## Future Features
 
 *  Compiler targeting the Common Language Runtime (".NET").
 
