@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace JackScottAU.BrainFuck.Library
 {
-	class Parser
+	public class Parser
 	{
 		/// <summary>
 		/// Holds the intermediate representation of the program as an Abstract Syntax Tree.
