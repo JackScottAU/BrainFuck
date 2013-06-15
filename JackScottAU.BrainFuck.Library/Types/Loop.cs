@@ -7,6 +7,6 @@ namespace JackScottAU.BrainFuck.Library.Types
 {
 	class Loop : IInstruction
 	{
-		List<IInstruction> Statements { get; set; }
+		public List<IInstruction> Statements { get; set; }
 	}
 }

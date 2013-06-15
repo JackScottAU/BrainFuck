@@ -47,6 +47,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JackScottAU.BrainFuck.Library\JackScottAU.BrainFuck.Library.csproj">
+      <Project>{3d12135e-05fc-46fa-9f91-f2134fbfddae}</Project>
+      <Name>JackScottAU.BrainFuck.Library</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
