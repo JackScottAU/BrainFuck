@@ -7,8 +7,8 @@
     <ProjectGuid>{DF479894-11CB-4C28-B6B4-9612633A22D0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary1</RootNamespace>
-    <AssemblyName>ClassLibrary1</AssemblyName>
+    <RootNamespace>JackScottAU.BrainFuck.Library</RootNamespace>
+    <AssemblyName>JackScottAU.BrainFuck.Library</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
