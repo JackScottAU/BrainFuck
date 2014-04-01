@@ -1,6 +1,6 @@
-﻿using JackScottAU.BrainFuck.Library.Types;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using JackScottAU.BrainFuck.Library.Types;
 
 namespace JackScottAU.BrainFuck.Library
 {
@@ -9,7 +9,7 @@ namespace JackScottAU.BrainFuck.Library
 		/// <summary>
 		/// Holds the intermediate representation of the program as an Abstract Syntax Tree.
 		/// </summary>
-		public List<IInstruction>AbstractSyntaxTree { get; set; }
+		public List<IInstruction> AbstractSyntaxTree { get; set; }
 
 		/// <summary>
 		/// Holds the portion of the program that has not yet been converted.
