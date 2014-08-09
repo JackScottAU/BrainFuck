@@ -2,6 +2,7 @@
 using JackScottAU.BrainFuck.Library.Types;
 using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace JackScottAU.BrainFuck.App
 {
@@ -16,18 +17,29 @@ namespace JackScottAU.BrainFuck.App
 			}
 
 			Parser parser = new Parser();
-			Interpreter interpreter = new Interpreter(30000, System.Console.In, System.Console.Out);
 
-			parser.GenerateASTFromString(System.IO.File.ReadAllText(args[0]));
+			parser.GenerateASTFromString(System.IO.File.ReadAllText(args[1]));
 			List<IInstruction> program = parser.AbstractSyntaxTree;
 
-			interpreter.Interpret(program);
+            if(args[0] == "-i")
+            {
+                Interpreter interpreter = new Interpreter(30000, System.Console.In, System.Console.Out);
+                interpreter.Interpret(program);
+            }
+            else
+            {
+                // compile to C code.
+                CCompiler compiler = new CCompiler();
+                StringBuilder builder = compiler.Compile(program);
+                System.IO.File.WriteAllText(args[2], builder.ToString());
+            }
 		}
 
 		static void PrintHelp()
 		{
 			System.Console.WriteLine("BrainFuck Tools");
-			System.Console.WriteLine("Usage: " + Environment.GetCommandLineArgs()[0] + " <inputfile>");
+			System.Console.WriteLine("Usage: " + Environment.GetCommandLineArgs()[0] + "[-i/-c] <inputfile>");
+            System.Console.WriteLine("C: Compile to C code, I: interpret");
 		}
 	}
 }

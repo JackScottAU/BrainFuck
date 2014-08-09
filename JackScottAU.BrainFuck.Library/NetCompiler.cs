@@ -8,7 +8,7 @@ using JackScottAU.BrainFuck.Library.Types;
 
 namespace JackScottAU.BrainFuck.Library
 {
-	public class Compiler
+	public class NetCompiler
 	{
 		public static void Compile(List<IInstruction> syntaxTree, string outputFileName, string outputName)
 		{
