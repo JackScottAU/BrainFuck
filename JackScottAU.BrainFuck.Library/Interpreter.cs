@@ -1,7 +1,7 @@
-﻿using JackScottAU.BrainFuck.Library.Types;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using JackScottAU.BrainFuck.Library.Types;
 
 namespace JackScottAU.BrainFuck.Library
 {
