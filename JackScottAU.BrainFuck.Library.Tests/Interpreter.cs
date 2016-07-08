@@ -7,7 +7,7 @@ namespace JackScottAU.BrainFuck.Library.Tests
 	public class Interpreter
 	{
 		[TestMethod]
-		public void SimpleNotLoopedProgram()
+		public void Interpreter_Interpret_SimpleProgram()
 		{
 			Assert.Inconclusive("TODO");
 		}

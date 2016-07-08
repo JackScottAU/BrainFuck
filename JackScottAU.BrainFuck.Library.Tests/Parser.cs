@@ -7,7 +7,7 @@ namespace JackScottAU.BrainFuck.Library.Tests
 	public class Parser
 	{
 		[TestMethod]
-		public void SimpleNonLoopedProgram()
+		public void Parser_GenerateASTFromString_SimpleProgram()
 		{
 			Assert.Inconclusive("TODO");
 		}

@@ -22,7 +22,7 @@ BrainFuck code, using the .NET infrastructure.
 The entire BrainFuck project is released under the terms of the ISC license. 
 The full license text follows:
 
-*Copyright (c) 2013, [Jack Scott](mailto:jack@jackscott.id.au)*
+*Copyright (c) 2013-2016, [Jack Scott](mailto:jack@jackscott.id.au)*
 
 *Permission to use, copy, modify, and/or distribute this software for any 
 purpose with or without fee is hereby granted, provided that the above copyright 
